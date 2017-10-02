@@ -1,0 +1,87 @@
+/* Below line is write to use Google font online */
+@import "http://fonts.googleapis.com/css?family=Ubuntu";
+.bar {
+    height: 18px;
+    background: green;
+}
+
+h1 {
+	margin-top: 40px;
+	text-align: center;
+}
+
+div#main {
+	width: 370px;
+	height: 370px;
+	margin: 0 auto;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+div#feedback_form {
+	text-align: left;
+	border: 1px solid #ccc;
+	width: 370px;
+	padding: 0 50px 15px;
+	margin-top: 20px;
+	box-shadow: 0 0 15px;
+	border-radius: 6px;
+	float: left;
+}
+
+.file-display{
+	color: #2BC1F2;
+}
+
+hr {
+	margin-top: -5px;
+}
+
+label {
+	float: left;
+	font-size: 15px;
+}
+
+textarea {
+	width: 110%;
+	border: 3px solid #2BC1F2;
+	padding: 10px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	height: 110px;
+	resize: none;
+}
+
+input[type="submit"] {
+	padding: 7px 35px;
+	background-color: #2BC1F2;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="button"] {
+	padding: 7px 35px;
+	background-color: #2BC1F2;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.divider {
+	width: 8px;
+	height: auto;
+	display: inline-block;
+}
+
+/* -------------------------------------
+CSS for Sidebar (optional)
+---------------------------------------- */
+div#fugo {
+	float: right;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src='jquery-1.11.3.js'></script>
+<script type="text/javascript" src="jquery.validate.min.js"></script>
+<script type="text/javascript" src="additional-methods.min.js"></script>
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/form.css'>
+		<style>
+    .tabs {
+      position: relative;   
+      min-height: 450px; /* This part sucks */
+      clear: both;
+      margin: 5px 0;
+    }
+    .tab {
+      float: left;
+    }
+    .tab label {
+      padding: 5px; 
+      position: relative;
+      left: 1px; 
+    }
+    .content {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: white;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+    }
+    [type=radio]:checked ~ label {
+      background: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+      z-index: 1;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow:hidden;word-break:normal;
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 5px;
+    text-align: left;word-wrap:break-word;
+}
+	</style>
+</head>
+
+<body>
+
+	<div id="page-wrap">
+    <div class="tabs" style="padding: 10px;" >
+   
+       <div class="tab">
+           <input type="radio" style="display:none" id="tab-1" name="tab-group-1" checked>
+           <label for="tab-1" style="background: #eee;border: 1px solid #ccc;"><b>Add Feedback </b></label>
+           
+      					<div class="content">
+               <div id="main_div">
+			<script type="text/javascript" src="popup.js"></script>
+		</div><span id="status-display"> </span><br>
+           </div> 
+       </div>
+        
+      <div class="tab">
+           <input type="radio" style="display:none" id="tab-2" name="tab-group-1">
+           <label for="tab-2" style ="border: 1px solid #ccc;background: #eee; "><b>View Feedback   </b></label>
+           <div class="content">
+               <div class="second_div">
+               	<span id="feedback-list">
+               </div>
+               
+           </div> 
+       </div>
+
+        
+    </div>
+    </div>
+</body>
+
+</html>

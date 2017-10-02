@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "User Feedback Extension",
+	"description": "This extension gathers feedback from end-users on research data sets.",
+	"version": "1.0",
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://data.csiro.au/dap/landingpage?*"],
+			"js": ["jquery-1.11.3.js", "content.js"],
+			"run_at": "document_idle",
+			"all_frames": false
+		}
+	],
+	"page_action": {
+		"default_icon": "feedback.png",
+		"default_title": "Send your feedback here!",
+		"default_popup": "index.html"
+	},
+	"permissions": ["activeTab", "contextMenus", "tabs", "notifications", "storage", "http://*/*", "https://*/*"]
+}
